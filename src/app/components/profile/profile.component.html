@@ -1,0 +1,92 @@
+<section class="vh-100" style="background-color: #f4f5f7">
+  <form
+    [formGroup]="formulario"
+    (ngSubmit)="guardarPerfil()"
+    class="my-form d-flex flex-column"
+  >
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-lg-6 mb-4 mb-lg-0">
+          <div class="card mb-3" style="border-radius: 0.5rem">
+            <div class="row g-0">
+              <div
+                class="col-md-4 gradient-custom text-center text-white"
+                style="
+                  border-top-left-radius: 0.5rem;
+                  border-bottom-left-radius: 0.5rem;
+                "
+              >
+                <div *ngIf="formulario.get('avatar_url')?.value">
+                  <img
+                    [src]="formulario.get('avatar_url')?.value"
+                    alt="Avatar"
+                    style="width: 75px; height: 75px; margin-top: 15%"
+                  />
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body p-4">
+                  <h6>Personal Profile</h6>
+                  <hr class="mt-0 mb-4" />
+                  <div class="row pt-1">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1"
+                        >User Name</span
+                      >
+                      <input
+                        formControlName="username"
+                        type="text"
+                        class="form-control"
+                        placeholder="Nombre de usuario"
+                        aria-label="Nombre de usuario"
+                        aria-describedby="basic-addon1"
+                        [ngClass]="usernameNoValid ? 'is-invalid' : 'is-valid'"
+                      />
+                    </div>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon2"
+                        >Entire Name</span
+                      >
+                      <input
+                        formControlName="full_name"
+                        type="text"
+                        class="form-control"
+                        placeholder="Nombre completo"
+                        aria-label="Nombre completo"
+                        aria-describedby="basic-addon2"
+                        [ngClass]="fullNameNoValid ? 'is-invalid' : 'is-valid'"
+                      />
+                    </div>
+                    <span
+                      *ngIf="!formulario.valid"
+                      class="invalid-feedback"
+                      style="text-align: center; color: red"
+                    >
+                      Por favor, completa el campo correctamente.
+                    </span>
+                    <div
+                      *ngIf="profileUpdated"
+                      class="success-message"
+                      style="text-align: center; color: green"
+                    >
+                      Update profile!
+                    </div>
+
+                    <div class="w-100 d-flex justify-content-end">
+                      <button
+                        type="submit"
+                        class="btn btn-primary align-self-center"
+                      >
+                        Update
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</section>
