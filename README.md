@@ -1,27 +1,48 @@
 # Art
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
+# Proyecto de Angular: Galería de Obras de Arte
 
-## Development server
+¡Bienvenidos a mi proyecto de Angular dedicado a la exploración de obras de arte a través de una API! En este proyecto, nos conectamos a una API de obras de arte y brindamos a los usuarios la posibilidad de crear cuentas, iniciar sesión y gestionar sus propias colecciones artísticas. Todo respaldado por Supabase como backend.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Pasos para un Correcto Funcionamiento
 
-## Code scaffolding
+1. **Instalación de Dependencias:**
+   Antes de comenzar, asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu sistema. Luego, desde Visual Studio Code o tu terminal favorita, ejecuta el siguiente comando para instalar las dependencias necesarias:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    ```bash
+    npm install
+    ```
 
-## Build
+   Este comando descargará el directorio `node_modules` con todas las dependencias del proyecto.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. **Iniciar la Aplicación:**
+   Una vez completada la instalación de las dependencias, utiliza el siguiente comando para iniciar la aplicación y abrir automáticamente la página en tu navegador:
 
-## Running unit tests
+    ```bash
+    ng serve -o
+    ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   Este comando iniciará el servidor de desarrollo y abrirá la aplicación en tu navegador predeterminado.
 
-## Running end-to-end tests
+## Vista Previa de la Aplicación
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+A continuación, se presentan algunas imágenes que destacan cómo se ve nuestra aplicación:
 
-## Further help
+![image](https://github.com/Uardet99/Proyecto-Angular-Art/assets/79867404/fe45f680-3f30-4dbb-bb70-0e08b968a704)
+*Visualización de nuestro Register*
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![image](https://github.com/Uardet99/Proyecto-Angular-Art/assets/79867404/ff20f131-0e40-45f8-9057-072512987bf8)
+*Visualización de nuestro Login*
+
+![image](https://github.com/Uardet99/Proyecto-Angular-Art/assets/79867404/b4c2c942-0cc2-410e-abb6-3b9d67c63d42)
+*Visualización de nuestro profile*
+
+![image](https://github.com/Uardet99/Proyecto-Angular-Art/assets/79867404/03a602de-4086-4376-af45-97509230235b)
+*Visualización de paginación*
+
+
+¡Esperamos que disfrutes explorando el mundo del arte con nuestra aplicación! Si tienes alguna pregunta o encuentras algún problema, no dudes en abrir un problema en nuestro repositorio o contactarnos.
+
+---
+
+
